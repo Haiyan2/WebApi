@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Net.Http.Formatting;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
 using System.Net.Http.Headers;
+using System.Web.Http.Cors;
+using WebApiContrib.Formatting.Jsonp;
+
 
 namespace WebApiDemo
 {
@@ -33,6 +37,16 @@ namespace WebApiDemo
             // config.Formatters.Remove(config.Formatters.JsonFormatter);
             config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
+            /*
+            // Cross domain using jsonp
+            var jsonFormatter = new JsonMediaTypeFormatter(config.Formatters.JsonFormatter);
+            config.Formatters.Insert(0, jsonFormatter);
+            */
+
+            // Enable cross domain: orgins, headers, method using Cors
+            EnableCorsAttribute cors = new EnableCorsAttribute("*","*","Get, Put");
+            config.EnableCors(cors);
         }
 
         /*

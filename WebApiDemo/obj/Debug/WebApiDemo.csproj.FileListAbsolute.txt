@@ -182,3 +182,8 @@ C:\HY PS\code\WebApiDemo\WebApiDemo\WebApiDemo\bin\System.Web.Http.Owin.xml
 C:\HY PS\code\WebApiDemo\WebApiDemo\WebApiDemo\obj\Debug\WebApiDemo.csprojResolveAssemblyReference.cache
 C:\HY PS\code\WebApiDemo\WebApiDemo\WebApiDemo\obj\Debug\WebApiDemo.dll
 C:\HY PS\code\WebApiDemo\WebApiDemo\WebApiDemo\obj\Debug\WebApiDemo.pdb
+C:\HY PS\code\WebApiDemo\WebApiDemo\WebApiDemo\bin\System.Web.Cors.dll
+C:\HY PS\code\WebApiDemo\WebApiDemo\WebApiDemo\bin\System.Web.Http.Cors.dll
+C:\HY PS\code\WebApiDemo\WebApiDemo\WebApiDemo\bin\WebApiContrib.Formatting.Jsonp.dll
+C:\HY PS\code\WebApiDemo\WebApiDemo\WebApiDemo\bin\System.Web.Http.Cors.xml
+C:\HY PS\code\WebApiDemo\WebApiDemo\WebApiDemo\bin\WebApiContrib.Formatting.Jsonp.pdb

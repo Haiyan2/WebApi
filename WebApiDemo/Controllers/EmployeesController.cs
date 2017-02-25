@@ -4,10 +4,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using EmployeeDataAccess;
 
 namespace WebApiDemo.Controllers
 {
+    [EnableCors("http://localhost:53275/", "*", "Get, Put")]
     public class EmployeesController : ApiController
     {
         // GET api/employees Get()
@@ -42,6 +44,7 @@ namespace WebApiDemo.Controllers
         }
         */
 
+        [DisableCors]
         // GET api/employees/id
         public HttpResponseMessage Get(int id)
         {

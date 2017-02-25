@@ -153,6 +153,5 @@ C:\HY PS\code\WebApiDemo\WebApiDemo\ClientWebApplication\bin\Microsoft.Owin.Secu
 C:\HY PS\code\WebApiDemo\WebApiDemo\ClientWebApplication\bin\Microsoft.Owin.Security.Twitter.xml
 C:\HY PS\code\WebApiDemo\WebApiDemo\ClientWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\HY PS\code\WebApiDemo\WebApiDemo\ClientWebApplication\bin\Microsoft.Owin.Security.OAuth.xml
-C:\HY PS\code\WebApiDemo\WebApiDemo\ClientWebApplication\obj\Debug\ClientWebApplication.csprojResolveAssemblyReference.cache
 C:\HY PS\code\WebApiDemo\WebApiDemo\ClientWebApplication\obj\Debug\ClientWebApplication.dll
 C:\HY PS\code\WebApiDemo\WebApiDemo\ClientWebApplication\obj\Debug\ClientWebApplication.pdb
