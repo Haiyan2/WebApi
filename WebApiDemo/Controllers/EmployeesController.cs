@@ -10,6 +10,7 @@ using EmployeeDataAccess;
 namespace WebApiDemo.Controllers
 {
     [EnableCors("http://localhost:53275/", "*", "Get, Put")]
+    [RequireHttps]
     public class EmployeesController : ApiController
     {
         // GET api/employees Get()

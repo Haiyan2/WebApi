@@ -47,6 +47,8 @@ namespace WebApiDemo
             // Enable cross domain: orgins, headers, method using Cors
             EnableCorsAttribute cors = new EnableCorsAttribute("*","*","Get, Put");
             config.EnableCors(cors);
+
+            config.Filters.Add(new RequireHttpsAttribute());
         }
 
         /*
