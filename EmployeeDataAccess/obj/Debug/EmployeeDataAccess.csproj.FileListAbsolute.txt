@@ -18,3 +18,13 @@ C:\HY PS\code\WebApiDemo\WebApiDemo\EmployeeDataAccess\bin\Debug\EntityFramework
 C:\HY PS\code\WebApiDemo\WebApiDemo\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csprojResolveAssemblyReference.cache
 C:\HY PS\code\WebApiDemo\WebApiDemo\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.dll
 C:\HY PS\code\WebApiDemo\WebApiDemo\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.pdb
+H:\Haiyan\Projects\VSProjects\WebApi\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csprojResolveAssemblyReference.cache
+H:\Haiyan\Projects\VSProjects\WebApi\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.dll.config
+H:\Haiyan\Projects\VSProjects\WebApi\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.dll
+H:\Haiyan\Projects\VSProjects\WebApi\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.pdb
+H:\Haiyan\Projects\VSProjects\WebApi\EmployeeDataAccess\bin\Debug\EntityFramework.dll
+H:\Haiyan\Projects\VSProjects\WebApi\EmployeeDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+H:\Haiyan\Projects\VSProjects\WebApi\EmployeeDataAccess\bin\Debug\EntityFramework.xml
+H:\Haiyan\Projects\VSProjects\WebApi\EmployeeDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+H:\Haiyan\Projects\VSProjects\WebApi\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.dll
+H:\Haiyan\Projects\VSProjects\WebApi\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.pdb

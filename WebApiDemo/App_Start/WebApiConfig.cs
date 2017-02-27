@@ -8,7 +8,6 @@ using System.Net.Http.Formatting;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
 using System.Net.Http.Headers;
-using System.Web.Http.Cors;
 using WebApiContrib.Formatting.Jsonp;
 
 
@@ -32,11 +31,13 @@ namespace WebApiDemo
                 defaults: new { id = RouteParameter.Optional }
             );
             //config.Formatters.Add(new CustomJsonFormater());
-            
+
             // config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new System.Net.Http.Headers.MediaTypeHeaderValue("text/html"));
             // config.Formatters.Remove(config.Formatters.JsonFormatter);
+            /*
             config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            */
 
             /*
             // Cross domain using jsonp
@@ -44,11 +45,23 @@ namespace WebApiDemo
             config.Formatters.Insert(0, jsonFormatter);
             */
 
+            /*
             // Enable cross domain: orgins, headers, method using Cors
             EnableCorsAttribute cors = new EnableCorsAttribute("*","*","Get, Put");
             config.EnableCors(cors);
+            */
 
+            /*
+            // Enable the https routing accross the entire web api controllers (within application) 
+            // need to import the certificate then generate the pub key and import to the trust root
             config.Filters.Add(new RequireHttpsAttribute());
+            */
+
+            /*
+            // enable authentication accross the entire web api controllers (within application)
+            // Or use [BasicAuthentication] on the controller or action level
+            config.Filters.Add(new BasicAuthenticationAttribute());
+            */
         }
 
         /*

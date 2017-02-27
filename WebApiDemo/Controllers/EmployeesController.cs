@@ -6,24 +6,28 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using EmployeeDataAccess;
+using System.Threading;
 
 namespace WebApiDemo.Controllers
 {
-    [EnableCors("http://localhost:53275/", "*", "Get, Put")]
-    [RequireHttps]
+    // [EnableCors("http://localhost:53275/", "*", "Get, Put")]    
     public class EmployeesController : ApiController
     {
         // GET api/employees Get()
         [HttpGet]
+        // [RequireHttps]
+        [BasicAuthentication]
         public HttpResponseMessage Get(string gender = "All")
         {
+            string username = Thread.CurrentPrincipal.Identity.Name;
             using (EmployeeDBEntities entities = new EmployeeDBEntities())
             {
-                switch (gender.ToLower())
+                switch (username.ToLower())
                 {
-                    case "all":
-                        return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.ToList());
+                    // case "all":
+                        // return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.ToList());
                     case "male":
+                        return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.Where(x => x.Gender.ToLower() == "male").ToList());
                     case "female":
                         return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.Where(x => x.Gender.ToLower() == gender).ToList());
                     default:
@@ -44,9 +48,10 @@ namespace WebApiDemo.Controllers
             }
         }
         */
-
+        
         [DisableCors]
         // GET api/employees/id
+        // [RequireHttps]
         public HttpResponseMessage Get(int id)
         {
             using (EmployeeDBEntities entities = new EmployeeDBEntities())
