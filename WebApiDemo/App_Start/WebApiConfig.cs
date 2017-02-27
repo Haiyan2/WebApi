@@ -62,6 +62,9 @@ namespace WebApiDemo
             // Or use [BasicAuthentication] on the controller or action level
             config.Filters.Add(new BasicAuthenticationAttribute());
             */
+
+            // TODo
+            // web api solution is individual user accounts
         }
 
         /*
